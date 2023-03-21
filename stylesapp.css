@@ -1,0 +1,262 @@
+:root {
+    --hell: rgb(88, 99, 104);
+    --dunkel: rgb(21, 24, 65);
+  }
+  
+  body {
+    margin: 0;
+    background: rgb(88, 99, 104);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  
+  nav {
+    position: sticky;
+    top: 0;
+    font-weight: 500;
+  
+    z-index: 99;
+  }
+  
+  footer,
+  nav {
+    backdrop-filter: blur(8px);
+  }
+  
+  .teaser {
+    width: 10%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media screen and (min-width: 800px) {
+    .teaser {
+      height: 100%;
+      width: 60%;
+    }
+  }
+  
+  .teaser img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .big {
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right:auto;
+    align-items: center;
+    text-align: center;
+  }
+  footer ul,
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  footer ul li,
+  nav ul li {
+    padding: 16px;
+  }
+  
+  .mitte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  section {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(139, 132, 132, 0.9);
+  
+    padding-top: 48px;
+    transform: translateY(-48px);
+  }
+  .modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  background-color: rgb(139, 132, 132); 
+  background-color: rgba(139,132,132, 0.4); 
+  padding-top: 80px;
+  }
+
+  .modal-content {
+  background-color: #fefefe;
+  margin: 5px auto; 
+  border: 1px solid #888;
+  width: 80%; 
+  }
+
+  .close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+  color: red;
+  cursor: pointer;
+  }
+
+  .animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+  }
+
+  @-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+  }
+
+  @keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+  }  
+
+form {
+  border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  display: block;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+} 
+
+
+body {
+	font-family: 'Lato', Arial, sans-serif;
+	color: #989c9b;
+}
+
+.container > header {
+	margin: 0 auto;
+	padding: 1em;
+	text-align: center;
+}
+
+.container > header h1 {
+  font-weight: 600;
+	font-size: 3em;
+	margin: 0;
+}
+
+.wrapper {
+	line-height: 1.5em;
+	margin: 0 auto;
+	padding: 2em 0 3em;
+	width: 90%;
+	max-width: 2000px;
+	overflow: hidden;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: #fff;
+}
+
+th {
+    background-color: #326295;
+    font-weight: bold;
+    color: #fff;
+    white-space: nowrap;
+}
+
+td, th {
+    padding: 1em 1.5em;
+    text-align: left;
+}
+
+tbody th {
+	background-color: #2ea879;
+}
+tbody tr:nth-child(2n-1) {
+    background-color: #f5f5f5;
+    transition: all .125s ease-in-out;
+}
+tbody tr:hover {
+    background-color: rgba(50,98,149,.3);
+}
+
+td.rank {
+	text-transform: capitalize;
+}
